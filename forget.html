@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forgot Password</title>
+  <link rel="stylesheet" href="forget.css">
+</head>
+<body>
+
+  <div class="forgot-container">
+    <h2>Forgot Password</h2>
+    <form action="send_password.py" method="POST">
+      
+      <label for="roll">Roll No.</label>
+      <input type="text" id="roll" name="roll" placeholder="Enter your Roll No" required>
+
+      <label for="mobile">Registered Mobile No.</label>
+      <input type="text" id="mobile" name="mobile" placeholder="Enter your Mobile Number" required>
+
+      <label for="captcha">Enter Captcha</label>
+      <div class="captcha-box">
+        <span id="captcha-text"></span>
+        <button type="button" id="refresh-btn">↻</button>
+      </div>
+      <input type="text" id="captcha-input" name="captcha" placeholder="Enter Captcha" required>
+
+      <button type="submit">Send Password</button>
+    </form>
+    <p style="text-align:center; margin-top:10px;">
+      <a href="login.html">Back to Login</a>
+    </p>
+  </div>
+
+  <script>
+    // Generate random captcha
+    function generateCaptcha() {
+      const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ123456789';
+      let captcha = '';
+      for (let i = 0; i < 5; i++) {
+        captcha += chars.charAt(Math.floor(Math.random() * chars.length));
+      }
+      document.getElementById("captcha-text").textContent = captcha;
+      return captcha;
+    }
+
+    let currentCaptcha = generateCaptcha();
+
+    document.getElementById("refresh-btn").addEventListener("click", () => {
+      currentCaptcha = generateCaptcha();
+    });
+
+    // Prevent form submit if captcha incorrect
+    document.querySelector("form").addEventListener("submit", function(e) {
+      const userCaptcha = document.getElementById("captcha-input").value;
+      if (userCaptcha !== currentCaptcha) {
+        e.preventDefault();
+        alert("Incorrect Captcha! Please try again.");
+        currentCaptcha = generateCaptcha();
+      }
+    });
+  </script>
+
+<footer class="footer">
+    <p>Project done by: Tanisha Tomar, Divya Drishti, Khushbu Fartyal, Swati, Tesika Singh, Kalpana</p>
+    <p>© 2025 Hostel Management System</p>
+  </footer>
+  
+</body>
+</html>

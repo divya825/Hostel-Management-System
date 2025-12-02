@@ -1,0 +1,133 @@
+/* --- Room Apply Form Section --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f8f9fa;
+  color: #333;
+}
+
+.college-header {
+  background: #004aad;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.college-header h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.college-logo{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.navbar {
+  background: #0066cc;
+  padding: 10px 0;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 5px 10px;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+  background: #ffd700;
+  color: #004aad;
+  border-radius: 5px;
+}
+.room-apply-section {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #eef2f7;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.room-apply-section h2 {
+  text-align: center;
+  color: #004aad;
+  margin-bottom: 30px;
+}
+
+/* Form styling */
+.room-apply-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.room-apply-form fieldset {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.room-apply-form legend {
+  font-weight: 600;
+  color: #004aad;
+  padding: 0 10px;
+}
+
+.room-apply-form label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.room-apply-form input,
+.room-apply-form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.room-apply-form input:focus,
+.room-apply-form select:focus {
+  border-color: #004aad;
+  box-shadow: 0 0 8px rgba(0,74,173,0.3);
+  outline: none;
+}
+
+/* Button */
+.room-apply-form button {
+  padding: 12px;
+  background: #004aad;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.room-apply-form button:hover {
+  background: #003580;
+}

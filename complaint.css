@@ -1,0 +1,144 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #eef2f3;
+  margin: 0;
+  padding: 0;
+}
+
+.college-header {
+  background: #004aad;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.college-header h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.college-logo{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.navbar {
+  background: #0066cc;
+  padding: 10px 0;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 5px 10px;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+  background: #ffd700;
+  color: #004aad;
+  border-radius: 5px;
+}
+
+.complaint-container {
+  width: 60%;
+  margin: 60px auto;
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.complaint-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+  font-size: 26px;
+  letter-spacing: 1px;
+}
+
+.complaint-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.complaint-form label {
+  margin: 8px 0 5px;
+  font-weight: 500;
+  color: #444;
+}
+
+.complaint-form input,
+.complaint-form textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.complaint-form input:focus,
+.complaint-form textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0,123,255,0.4);
+}
+
+.complaint-form textarea {
+  resize: vertical;
+  height: 20px;
+}
+
+.complaint-form button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.complaint-form button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .complaint-container {
+    width: 90%;
+    padding: 25px;
+  }
+}
+
+/* Footer */
+.footer {
+  background: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 14px;
+  position: fixed;   
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.footer p {
+  margin: 5px 0;
+}

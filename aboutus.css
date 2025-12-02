@@ -1,0 +1,95 @@
+/* --- College Header --- */
+.college-header {
+  background: #004aad;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.college-header h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.college-logo{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.navbar {
+  background: #0066cc;
+  padding: 10px 0;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 5px 10px;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+  background: #ffd700;
+  color: #004aad;
+  border-radius: 5px;
+}
+
+/* --- About Section --- */
+.about-section {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #eef2f7;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.about-section h2 {
+  color: #004aad;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  text-align: justify;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+/* --- Footer --- */
+.footer {
+  background: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
+/* --- Responsive --- */
+@media(max-width: 768px){
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .college-header {
+    flex-direction: column;
+  }
+}
